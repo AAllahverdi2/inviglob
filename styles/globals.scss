@@ -1,0 +1,127 @@
+@import "null.scss";
+@import "typography.scss";
+@import "variables.scss";
+
+#__next {
+	height: 100%;
+}
+
+html, body {
+	font-size: 62.5%;
+	height: 100vh;
+
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: $main_bg;
+
+	font-family: $font-family;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.dn {
+	display: none;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+
+
+
+//FORM
+.form {
+	margin: 0 auto;
+	max-width: 36rem;
+	.formGroup {
+		display: flex;
+		flex-direction: column;
+		row-gap: .6rem;
+
+		
+		&:not(:last-child) {
+			margin-bottom: 2.4rem;
+		}
+
+		label {
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 1.21;
+		}
+
+		input {
+			background: transparent;
+			border: 1px solid #fff;
+			border-radius: 1rem;
+			padding: .5rem;
+			font-size: 2rem;
+			color: #fff;
+			caret-color: #fff;
+		}
+
+		span {
+			font-size: 1.4rem;
+			color: $red_color;
+			line-height: 1.25;
+		}
+	}
+
+	.submitBtn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		padding: 1rem 0;
+		border-radius: .6rem;
+
+		color: #fff;
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 1.19;
+
+		background-color: $main_bg_button;
+
+		transition: all .3s ease-in-out 0s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $main_bg_button_hover;
+		}
+	}
+
+	.dropFile {
+		padding: 1.7rem;
+		min-width: 10rem;
+
+		border: 1px dashed #fff;
+		border-radius: .8rem; 
+
+		img {
+			width: 2.8rem;
+			height: 2.8rem;
+			object-fit: contain;
+			margin-bottom: 2.1rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+			line-height: 1.2;
+			font-weight: 600;
+			color: #fff;
+			margin-bottom: 0.9rem;
+		}
+
+		span {
+			color: #BEBEBE;
+			font-size: 1.1rem;
+			line-height: 1.36;
+			font-weight: 500;
+		}
+	}
+}

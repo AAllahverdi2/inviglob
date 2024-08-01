@@ -1,0 +1,51 @@
+@import "../../styles/form.scss";
+@import "../../styles/modal.scss";
+
+.position {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	padding: .7rem 1.1rem;
+
+	border-radius: 1rem;
+	border: 1px solid #1f2d4d;
+
+	transition: all .3s ease-in-out 0s;
+
+	&:hover {
+		background-color: #1f2d4d;
+	}
+
+	p {
+		color: #fff;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.icons {
+		display: flex;
+		column-gap: 2rem;
+
+		.dn {
+			display: none;
+		}
+		
+		.iconBtn {
+			width: 2rem;
+			height: 2rem;
+			padding: 0;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

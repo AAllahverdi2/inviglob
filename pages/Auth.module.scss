@@ -1,0 +1,16 @@
+@import "../styles/form.scss";
+
+.loginWrapper {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	.logo {
+		width: 44rem;
+		height: 10rem;
+		object-fit: cover;
+		margin-bottom: 8.5rem;
+	}
+}
+

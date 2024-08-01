@@ -1,0 +1,53 @@
+@import "../../styles/form.scss";
+@import "../../styles/modal.scss";
+
+.addBtn {
+	display: flex;
+	align-items: center;
+
+	width: 13rem;
+	height: fit-content;
+	padding: 1rem 1.3rem;
+	border: none;
+	border-radius: 1rem;
+
+	background-color: $main_bg_button;
+	color: #fff;
+
+	transition: all .3s ease-in-out 0s;
+	cursor: pointer;
+	float: right;
+
+	img {
+		width: 1.7rem;
+		height: 1.7rem;
+	}
+
+	&:hover {
+		background-color: $main_bg_button_hover;
+	}
+
+	span {
+		margin: 0 auto;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.13;
+	}
+}
+
+.cards {
+	margin-top: 6.5rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.2rem;
+	clear: both;
+
+	.emptyText {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 600;
+		color: #fff;
+	}
+}
+
+

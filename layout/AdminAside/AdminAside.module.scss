@@ -1,0 +1,53 @@
+$aside_bg: #101828;
+$hoverable_bg: #344054;
+
+.aside {
+	background-color: $aside_bg;
+	width: 28rem;
+	height: 100%;
+	padding: 3.5rem 1.7rem;
+
+	.logo {
+		margin: 0 auto;
+		margin-bottom: 3rem;
+	}
+
+	.nav {
+		ul {
+			padding: 0;
+			list-style: none;
+		}
+
+		.link {
+			display: flex;
+			column-gap: 1rem;
+			align-items: center;
+
+			padding: 3.2rem 1.5rem;
+			transition: all .3s ease-in-out 0s;
+			background: transparent;
+			width: 100%;
+			border: none;
+			color: #fff;
+
+			cursor: pointer;
+
+			
+			&:hover {
+				background-color: $hoverable_bg;
+			}
+
+			img {
+				width: 2rem;
+				height: 2rem;
+				object-fit: cover;
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 1.5;
+			}
+		}
+	}
+}
